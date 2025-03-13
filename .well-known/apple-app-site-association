@@ -3,12 +3,7 @@
       "details": [
            {
              "appIDs": [ "AMRK7T64P7.yuelyu.FullApp" ],
-             "components": [
-               {
-                  "/": "/fullapp",
-                  "comment": "Link to the full app"
-               }
-             ]
+             "paths": ["/"]
            }
        ]
    },
