@@ -3,7 +3,7 @@
       "details": [
            {
              "appIDs": [ "AMRK7T64P7.yuelyu.FullApp" ],
-             "paths": ["/"]
+             "paths": ["/fullapp"]
            }
        ]
    },
