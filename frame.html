@@ -11,11 +11,37 @@
 
     A test link1 without target: <a href="https://appclip.apple.com/id?p=yuelyu.FullApp.Clip"> https://appclip.apple.com/id?p=yuelyu.FullApp.Clip</a> <br/>
 
-    A test link2 with target: <a href="https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic" target="_blank"> https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic</a> <br/>
-
     A test link2 with target: <a href="https://one.google.com/home" target="_blank"> https://one.google.com/home</a> <br/>
 
-    A test link2 with target: <a href="https://recaptcha.net/qr/123456" target="_blank"> https://recaptcha.net/qr/123456</a> <br/>
+    Default appclip link blank target: <a href="https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic" target="_blank"> https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic</a> <br/>
 
+    Default appclip link self target: <a href="https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic" target="_self"> https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic</a> <br/>
+
+    Default appclip link top target: <a href="https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic" target="_top"> https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic</a> <br/>
+
+    Default appclip link parent target: <a href="https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic" target="_parent"> https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic</a> <br/>
+    
+    Default appclip button with blank target: <button id="myUrlButton1"> https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic</button> <br/>
+
+    link with blank target: <a href="https://recaptcha.net/qr/123456" target="_blank"> https://recaptcha.net/qr/123456</a> <br/>
+
+    link with self target: <a href="https://recaptcha.net/qr/123456" target="_self"> https://recaptcha.net/qr/123456</a> <br/>
+
+    link with top target: <a href="https://recaptcha.net/qr/123456" target="_top"> https://recaptcha.net/qr/123456</a> <br/>
+
+    link with parent target: <a href="https://recaptcha.net/qr/123456" target="_parent"> https://recaptcha.net/qr/123456</a> <br/>
+
+    button with blank target: <button id="myUrlButton"> https://recaptcha.net/qr/123456</button> <br/>
+
+    <script>
+      document.getElementById('myUrlButton').addEventListener('click', function() {
+        // Open the URL in a new tab/window
+        window.open('https://recaptcha.net/qr/123456', '_blank');
+      });
+      document.getElementById('myUrlButton1').addEventListener('click', function() {
+        // Open the URL in a new tab/window
+        window.open('https://appclip.apple.com/id?p=com.google.Maps.AppClip&url=https://maps.app.goo.gl/hefbbcuY9uwtj9UTA?g_st=ic', '_blank');
+      });
+    </script>
 </body>
 </html>
